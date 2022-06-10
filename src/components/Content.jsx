@@ -13,7 +13,7 @@ const Content = () => {
 
   return (
     <div className="flex justify-center w-full h-full">
-      <div className="h-2/3 w-2/3 lg:bg-content mt-10 text-blue-100 lg:outline outline-indigo-900 rounded-2xl flex flex-col p-10 justify-center">
+      <div className="h-5/6 w-5/6 lg:bg-content my-10 py-10 text-blue-100 lg:outline outline-indigo-900 rounded-2xl flex flex-col text-center items-center">
         <h1 className="text-3xl text-blue-100 p-4">Guess the color:</h1>
         {status ? (
           <>

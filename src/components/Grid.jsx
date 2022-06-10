@@ -6,7 +6,7 @@ const Grid = ({ answerColors, setStatus }) => {
   let answer = Math.floor(Math.random() * 9);
 
   return (
-    <div className="grid grid-cols-3 lg:w-[400px] lg:h-[400px] w-[200px] h-[200px]">
+    <div className="grid grid-cols-3 lg:w-[400px] lg:h-[400px] w-[200px] h-[200px] justify-center ">
       {numbers.map((n) => (
         <ColorSquare
           key={n}

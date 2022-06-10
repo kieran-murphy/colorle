@@ -19,7 +19,7 @@ const ColorSquare = ({ num, answer, answerColors, setStatus }) => {
   return (
     <div
       style={num === answer ? answerStyle : colorstyle}
-      className="lg:w-28 lg:h-28 w-14 h-14 rounded-xl cursor-pointer lg:mt-0 mt-2"
+      className="lg:w-28 lg:h-28 w-14 h-14 rounded-xl cursor-pointer lg:mt-0 mt-2 "
       onClick={() => {
         // alert(`${num} - ${answer}`);
         handleClick();

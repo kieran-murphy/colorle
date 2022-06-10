@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion'
 
 const ColorSquare = ({ num, answer, answerColors, setStatus }) => {
   let red = Math.floor(Math.random() * 256);
@@ -17,16 +18,18 @@ const ColorSquare = ({ num, answer, answerColors, setStatus }) => {
   };
 
   return (
-    <div
+    <motion.div
       style={num === answer ? answerStyle : colorstyle}
       className="lg:w-28 lg:h-28 w-14 h-14 rounded-xl cursor-pointer lg:mt-0 mt-2 "
+      whileTap={{ scale: 0.8 }}
+      whileHover={{ scale: 1.1 }}
       onClick={() => {
         // alert(`${num} - ${answer}`);
         handleClick();
       }}
     >
       {/* {num === answer && <h1>XXX</h1>} */}
-    </div>
+    </motion.div>
   );
 };
 

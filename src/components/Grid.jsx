@@ -1,12 +1,16 @@
 import React from "react";
 import ColorSquare from "./ColorSquare";
+import { motion } from "framer-motion";
 
 const Grid = ({ answerColors, setStatus }) => {
   const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   let answer = Math.floor(Math.random() * 9);
 
   return (
-    <div className="grid grid-cols-3 lg:w-[400px] lg:h-[400px] w-[200px] h-[200px] justify-center ">
+    <motion.div
+      
+      className="grid grid-cols-3 lg:w-[400px] lg:h-[400px] w-[200px] h-[200px] justify-center "
+    >
       {numbers.map((n) => (
         <ColorSquare
           key={n}
@@ -16,7 +20,7 @@ const Grid = ({ answerColors, setStatus }) => {
           setStatus={setStatus}
         />
       ))}
-    </div>
+    </motion.div>
   );
 };
 

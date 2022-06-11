@@ -8,7 +8,6 @@ const Grid = ({ answerColors, setStatus }) => {
 
   return (
     <motion.div
-      
       className="grid grid-cols-3 lg:w-[400px] lg:h-[400px] w-[200px] h-[200px] justify-center "
     >
       {numbers.map((n) => (

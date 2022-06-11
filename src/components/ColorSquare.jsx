@@ -1,7 +1,7 @@
-import React from "react";
+import React, {memo} from "react";
 import { motion } from 'framer-motion'
 
-const ColorSquare = ({ num, answer, answerColors, setStatus }) => {
+const ColorSquare = ({ num, answer, answerColors, setStatus, addAttempt }) => {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
   let blue = Math.floor(Math.random() * 256);
@@ -13,7 +13,10 @@ const ColorSquare = ({ num, answer, answerColors, setStatus }) => {
 
   const handleClick = () => {
     if (num === answer) {
+      addAttempt();
       setStatus(false);
+    } else {
+      addAttempt();
     }
   };
 
@@ -26,6 +29,7 @@ const ColorSquare = ({ num, answer, answerColors, setStatus }) => {
       onClick={() => {
         // alert(`${num} - ${answer}`);
         handleClick();
+        
       }}
     >
       {/* {num === answer && <h1>XXX</h1>} */}

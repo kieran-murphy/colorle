@@ -1,8 +1,8 @@
-import React from "react";
+import React, {memo} from "react";
 import ColorSquare from "./ColorSquare";
 import { motion } from "framer-motion";
 
-const Grid = ({ answerColors, setStatus }) => {
+const Grid = ({ answerColors, setStatus, addAttempt }) => {
   const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   let answer = Math.floor(Math.random() * 9);
 
@@ -17,6 +17,7 @@ const Grid = ({ answerColors, setStatus }) => {
           answer={answer}
           answerColors={answerColors}
           setStatus={setStatus}
+          addAttempt={addAttempt}
         />
       ))}
     </motion.div>

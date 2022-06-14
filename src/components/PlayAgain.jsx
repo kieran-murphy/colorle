@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from 'framer-motion';
 
-const PlayAgain = ({ setStatus, resetAttempts }) => {
+
+const PlayAgain = ({ setStatus, resetAttempts, updateColorName }) => {
+  
+ 
+  
   return (
     <motion.div
       className="cursor-pointer w-40 h-16 bg-blue-700 text-center rounded-xl"
@@ -9,6 +13,7 @@ const PlayAgain = ({ setStatus, resetAttempts }) => {
         {
         setStatus(true)
         resetAttempts()
+        updateColorName()
         }
       }
       whileTap={{ scale: 0.8 }}
@@ -16,6 +21,8 @@ const PlayAgain = ({ setStatus, resetAttempts }) => {
       
     >
       <h1 className="text-xl pt-4">Play Again?</h1>
+      
+     
     </motion.div>
   );
 };

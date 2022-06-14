@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/colorle/static/css/main.13d38e04.css",
-    "main.js": "/colorle/static/js/main.e1a7ead0.js",
+    "main.js": "/colorle/static/js/main.fde60c14.js",
     "static/js/787.8d178db3.chunk.js": "/colorle/static/js/787.8d178db3.chunk.js",
     "index.html": "/colorle/index.html",
     "main.13d38e04.css.map": "/colorle/static/css/main.13d38e04.css.map",
-    "main.e1a7ead0.js.map": "/colorle/static/js/main.e1a7ead0.js.map",
+    "main.fde60c14.js.map": "/colorle/static/js/main.fde60c14.js.map",
     "787.8d178db3.chunk.js.map": "/colorle/static/js/787.8d178db3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13d38e04.css",
-    "static/js/main.e1a7ead0.js"
+    "static/js/main.fde60c14.js"
   ]
 }

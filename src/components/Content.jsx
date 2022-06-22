@@ -11,7 +11,8 @@ const Content = () => {
   let answerColors = { red: answerRed.current, green: answerGreen.current, blue: answerBlue.current };
   
   const name = React.useRef(namer(`rgb(${answerRed.current},${answerGreen.current},${answerBlue.current})`));
-  console.log(name.current.pantone[0].name, `rgb(${answerRed.current},${answerGreen.current},${answerBlue.current})`);
+  // const textcolorstyle = { "color": `RGB(${answerRed}, ${answerGreen}, ${answerBlue})` };
+  // console.log(name.current.pantone[0].name, `rgb(${answerRed.current},${answerGreen.current},${answerBlue.current})`);
 
   const [status, setStatus] = useState(true);
   const attempts = React.useRef(0);
